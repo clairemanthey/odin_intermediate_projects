@@ -14,20 +14,31 @@
   flex-direction: row;
 }
 
+.side{
+  background: url(wine-img-02.jpg);
+  flex-grow: 1;
+  min-width: 440px;
+  width: 35vw;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container-img{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px 25px;
+  margin: 100px 0;
+}
+
+
 input:focus{
   outline: none;
 }
 
-.wine-img{
-  width:35vw;
-  height: 100vh;
-}
-
 .wine-icon{
-  position: absolute;
-  top: 6%;
-  left: 9%;
-  width: 15%;
+  margin: 15px 0 15px 33%;
+
+  width: 30%;
 }
 
 .content_section{
