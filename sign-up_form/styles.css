@@ -1,0 +1,132 @@
+*, html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+.body{
+  background-color: #343434;
+}
+
+.main{
+  display:flex;
+  flex-direction: row;
+}
+
+.wine-img{
+  width:35vw;
+  height: 100vh;
+}
+
+.wine-icon{
+  position: absolute;
+  top: 6%;
+  left: 9%;
+  width: 15%;
+}
+
+.content_section{
+  padding: 150px 0 0 0;
+  background-color: #f9fafb;
+
+}
+
+.content_para{
+  font-weight: 600;
+  font-size: 1.25rem;
+    padding: 0 100px 20px 50px;
+
+}
+
+.content_para-two{
+  margin: 15px 0 0 0;
+}
+
+.form{  
+}
+
+.form-container{
+  margin: 50px 0px 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px #dadbdb;  
+  padding: 0 0 20px 50px;
+}
+
+.heading_one{
+  font-weight: 600;
+  padding: ;
+}
+
+.fieldset{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-transform: uppercase;
+  border: none;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  width: 250px;
+  border: 1px solid #EFF0F1;
+  font-size: 0.75rem;
+  padding: 7px 10px;
+  border-radius: 4px;
+} 
+
+.label{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 20px 2px 1px 0;
+  font-size: 0.75rem;
+}
+
+.container_btn{
+  margin: 0 0 0 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-submit{
+  background-color: #596d48;
+  color: #e4e7e1;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 13px 45px;
+  cursor: pointer;
+}
+
+.content_para-three{
+  margin: 25px 0 0 0;
+}
+
+.para-link{
+  color: #596d48;
+  text-decoration: none;
+}
+
+.help { display: none; }
+
+.invalid .help { display: block; }
+
+.invalid label, .invalid input, .invalid .help {
+  color: red;
+  border-color: red;
+}
+
+/*--Error Message--*/
+.error{
+  width: 250px;
+  padding-inline: 2px;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 5px;
+}
