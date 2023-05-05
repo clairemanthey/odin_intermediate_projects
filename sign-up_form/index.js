@@ -16,32 +16,15 @@ const passwordError = document.querySelector("#input-password + span.error");
 
 const confirmPassword = document.getElementById("confirm-password");
 const confirmPasswordError = document.querySelector("#confirm-password + span.error")
+
 const submitBtn = document.getElementById("btn-submit");
 
-
-emailInput.addEventListener("input", (event) =>{
-	if(emailInput.validity.valid){
-		emailError.textContent = "";
-		emailError.className = "error";
-	}else{
-		showError();
-	}
-});
-
-let showError = () => {
-	if(emailInput.validity.valueMissing){
-		emailInput.textContent = "Please enter a valid email address";
-	}else if(emailInput.validity.typeMismatch){
-		emailError.textContent = "Please enter a valid email address";
-	}
-	emailError.className = "error active";
-};
 
 firstName.addEventListener("input", (event) => {
 	if(firstName.validity.valid){
 		firstNameError.textContent = "";
 		firstNameError.className = "error";
-		firstName.style.backgroundColor = "green";
+		firstName.style.border = "1px solid #00B800";
 
 	}else{
 		showFirstNameError();
@@ -50,13 +33,8 @@ firstName.addEventListener("input", (event) => {
 
 let showFirstNameError = () => {
 	if(firstName.validity.tooShort){
-		//firstName.textContent = `First name should be at least ${firstName.minLength} characters`;
-		firstName.style.backgroundColor = "orange";
-
-	}/*else if(firstName.validity.tooLong){
-		firstName.textContent = `Maximum number of characters ${firstName.minLength}`;
-	} */
-
+		firstName.style.border = "1px solid #EC323E";
+	}
 	firstName.className = "error active";
 };
 
@@ -64,8 +42,7 @@ lastName.addEventListener("input", (event) => {
 	if(lastName.validity.valid){
 		lastNameError.textContent = "";
 		lastNameError.className = "error";
-		lastName.style.backgroundColor = "green";
-
+		lastName.style.border = "1px solid #00B800";
 	}else{
 		showFirstNameError();
 	}
@@ -74,17 +51,36 @@ lastName.addEventListener("input", (event) => {
 
 let showLastNameError = () =>{
 	if(lastName.validity.tooShort){
-		lastName.style.backgroundColor = "orange";
+		lastName.style.backgroundColor = "1px solid red";
 	}
+
 	lastName.className = "error active";
 };
 
+emailInput.addEventListener("input", (event) =>{
+	if(emailInput.validity.valid){
+		emailError.textContent = "";
+		emailError.className = "error";
+		emailInput.style.border = "1px solid #00B800"
+	}else{
+		showError();
+	}
+});
+
+let showError = () => {
+	if(emailInput.validity.valueMissing){
+		emailInput.style.border = "1px solid #EC323E";
+	}else if(emailInput.validity.typeMismatch){
+		emailInput.style.border = "1px solid #EC323E";
+	}
+	emailError.className = "error active";
+};
 
 phoneNum.addEventListener("input", (event) => {
 	if(phoneNum.validity.valid){
 		phoneNumError.textContent = "";
 		phoneNumError.className = "error";
-		phoneNum.style.backgroundColor = 'green';
+		phoneNum.style.border = '1px solid #00B800';
 	}else{
 		showPhoneNumeError();
 	}
@@ -92,18 +88,16 @@ phoneNum.addEventListener("input", (event) => {
 
 let showPhoneNumeError = () => {
 	if(phoneNum.validity.patternMismatch){
-		phoneNum.style.backgroundColor = "orange";
-		phoneNumError.textContent = "Enter in xxx-xxx-xxxx form";
+		phoneNum.style.border = "1px solid #EC323E";
 	}
-	phoneNum.className = "error active";
+	phoneNum.className = "input";
 };
 
 password.addEventListener("input", (event) => {
-
 	if(password.validity.valid){
 		passwordError.textContent = "";
 		passwordError.className = "error";
-		password.style.backgroundColor = "green";
+		password.style.border = "1px solid #00B800";
 	}else{
 		showPasswordError();
 	}
@@ -111,7 +105,7 @@ password.addEventListener("input", (event) => {
 
 let showPasswordError = () => {
 	if(password.validity.tooShort){
-		password.style.backgroundColor = "orange";
+		password.style.border = "1px solid #EC323E";
 	}
 	password.className = "input error active";
 };
@@ -119,13 +113,9 @@ let showPasswordError = () => {
 confirmPassword.addEventListener("input", (event) =>{
 	let passwordVal = password.value;
 	let confirmPasswordVal = confirmPassword.value;
-	console.log(passwordVal);
-	console.log(confirmPasswordVal)
 	if(passwordVal === confirmPasswordVal){
-		confirmPassword.style.backgroundColor = "green"
-		console.log("password match");
+		confirmPassword.style.border = "1px solid #00B800"
 	}else{
-		confirmPassword.style.background = "orange"
-		console.log("passwords don't match");
+		confirmPassword.style.border = "1px solid #EC323E"
 	}
 });
