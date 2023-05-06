@@ -17,7 +17,7 @@
 .side{
   background: url(wine-img-02.jpg);
   flex-grow: 1;
-  min-width: 440px;
+  min-width: 300px;
   width: 35vw;
   background-size: cover;
   height: 100vh;
@@ -127,11 +127,6 @@ input:focus{
   text-decoration: none;
 }
 
-.help { display: none; }
-
-.invalid .help { display: block; }
-
-
 
 /*--Error Message--*/
 .error{
@@ -139,4 +134,19 @@ input:focus{
   padding-inline: 2px;
   font-size: 80%;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px){
+  .side{
+    min-width: 150px;
+    width: 25vw;
+      
+  }
+  .container-img{
+  }
+  .wine-icon{
+      margin: 0px 0 15px 10%;
+
+    width: 85%;
+  }
 }

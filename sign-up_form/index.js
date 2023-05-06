@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+let inputs = document.querySelector(".input");
 const firstName = document.getElementById("first-name");
 const firstNameError = document.querySelector("#first-name + span.error")
 
@@ -119,3 +120,7 @@ confirmPassword.addEventListener("input", (event) =>{
 		confirmPassword.style.border = "1px solid #EC323E"
 	}
 });
+
+submitBtn.addEventListener("click", () => {
+
+})
