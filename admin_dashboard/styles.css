@@ -6,7 +6,7 @@
 
 .main{
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-columns: minmax(215px, 16%) 3fr 1fr;
 	grid-template-rows: 1fr 3fr 3fr;
 	height: 100vh;
 }
@@ -100,6 +100,12 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0 0 0 20px;
 }
 
+.user-icon{
+	width: 50px;
+	height: 50px;
+	margin: 0 20px 0 0;
+}
+
 .container_btn{
 	display: flex;
 	flex-direction: row;
@@ -167,10 +173,75 @@ h1, h2, h3, h4, h5, h6{
 	grid-column: 3 / 3;
 	grid-row: 2 / 3;
 	background-color: rgba(226, 232, 240, 0.6);
-
+	padding: 20px 15px 0 0;
 }
+
+.title_announcement{
+	font-size: 1.25rem;
+}
+
+.announcement__container{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin: 0 20px 0 0;
+	border-radius: 7px;
+	padding: 5px 15px 5px;
+	margin: 10px 0 0 0;
+}
+
+.announcement__container-title{
+	font-size: 1rem;
+	padding: 15px 0 2px;
+	font-weight: 500;
+}
+
+.announcement__container-para{
+	font-size: 0.65rem;
+	color: #6f6f6f;
+	padding: 0 0 15px;
+}
+
 .section__trending{
 	grid-column:  3 / 3;
 	grid-row: 3 / 3;
 	background-color: rgba(226, 232, 240, 0.6);
+	padding: 20px 15px 0 0;
+}
+
+.container_trending{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin: 0 20px 0 0;
+	border-radius: 7px;
+	padding: 5px 15px 5px;
+	margin: 10px 0 0 0;
+	font-size: 0.8rem;
+}
+
+.section_user{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 15px 0;
+}
+
+.user-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.tending-user-icon{
+	width: 32px;
+	height: 32px;
+	margin: 0 10px 0 0;
+}
+
+.trending-para{
+	line-height: 1.4;
+}
+
+.trending-para-02{
+	color: #6f6f6f;
 }
