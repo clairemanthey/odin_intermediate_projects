@@ -6,7 +6,7 @@
 
 .main{
 	display: grid;
-	grid-template-columns: minmax(215px, 16%) 3fr 1fr;
+	grid-template-columns: minmax(220px, 16%) 3fr 1fr;
 	grid-template-rows: 1fr 3fr 3fr;
 	height: 100vh;
 }
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container_search{
-	padding: 15px 0 0 25px;
+	padding: 20px 0 0 40px;
 	display: flex;
 	flex-direction: row;
 	align-items: start;
@@ -90,20 +90,29 @@ h1, h2, h3, h4, h5, h6{
 .container_alert{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	padding: 15px 0 0 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_alert > *{
+	margin: 0 15px;
 }
 
 .container_greeting{
 	display: flex;
 	flex-direction: row;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 40px;
 }
 
 .user-icon{
 	width: 50px;
 	height: 50px;
 	margin: 0 20px 0 0;
+}
+
+.user-icon-top{
+	width: 30px;
+	height: 30px;
 }
 
 .container_btn{
