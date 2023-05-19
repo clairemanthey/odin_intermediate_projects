@@ -1,0 +1,117 @@
+:root{
+	--serif: "Libre Baskerville";
+	--sans-serif: "Heebo";
+	--main-bg: #5B8E7D;
+	--main-txt: #271302;
+	--book-bg: #FCF5E5;
+}
+
+
+*, html{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.body{
+	background-color: var(--main-bg);
+	color: var(--main-txt);
+}
+
+.center{
+	text-align: center;
+}
+
+.header_01{
+	font-size: 4rem;
+	font-family: var(--serif);
+	font-weight: 400;
+}
+
+.btn-add{
+	display: block;
+	margin: 15px auto;
+	border: 3px solid var(--main-txt);
+	border-radius: 25px;
+	color: var(--main-txt);
+	background-color: var(--book-bg);
+	font-weight: 600;
+	font-family: var(--serif);
+	padding: 8px 12px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.header_book{
+	font-family: var(--sans-serif);
+	text-decoration: underline;
+	font-weight: 300;
+	font-size: 2.25rem;
+}
+
+.section_book-list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.article_book{
+	border: 2px solid var(--main-txt);
+	padding: 10px 10px 5px;
+	background-color: var(--book-bg);
+	color: inherit;
+	width: 375px;
+	margin: 25px 0;
+}
+
+.book_header{
+	font-family: var(--serif);
+	font-size: 1.25rem;
+	padding: 0 0 10px 0;
+}
+
+.display_author{
+	font-family: var(--sans-serif);
+	font-size: 1.1rem;
+	padding-block: 7px;
+}
+
+.display_pages{
+	font-family: var(--sans-serif);
+	font-size: 1.1rem;
+	padding-block: 7px;
+}
+
+.status{
+	font-family: var(--sans-serif);
+	font-size: 1.1rem;
+	padding: 5px 0 40px;
+}
+
+.btn-delete{
+	margin: 0 auto;
+	display: block;
+	background-color: inherit;
+	border: none;
+	font-weight: 600;
+	font-size: 1.15rem;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
