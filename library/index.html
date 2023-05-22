@@ -13,13 +13,78 @@
   </head>
   <body class="body">
     <main class="main">
+    <!--Modal to display on smaller screen size and hidden on larger-->
+      <div id="modal_add-book" class="container_modal">
+        <div class="content_modal">
+          <span class="close">&times;</span>
+            <section class="modal-add-book">
+              <h2 class="add-book-header center">Add Book</h2>
+              <form class="form modal-form">
+                <div class="container_modal-form">
+                  <label for="modal-title" class="label modal-label">Title</label>
+                  <input type="text" id="modal-title" class="input">
+                </div>
+ 
+                <div class="container_modal-form">      
+                  <label for="modal-author" class="label modal-label">Author</label>
+                  <input type="text" id="modal-author" class="input">
+                </div>
+
+                <div class="container_modal-form">    
+                  <label for="modal-length" class="label modal-label">Length</label>
+                  <input type="number" min="1" id="modal-length" class="input">
+                </div>
+
+                <div class="container_modal-form container_modal-form-checkbox">
+                  <label for="modal-read" class="label modal-label">Read</label>
+                  <input type="checkbox" id="modal-read" class="input input_checkbox">
+                </div>
+
+                <div class="container_modal-form container_modal-form-btn">
+                  <input type="submit" value="Add Book" class="btn-add-02" id="modal_add-btn">
+                </div>
+              </form>
+            </section>    
+        </div>
+      </div>
+    <!--Main Content--> 
       <h1 class="header_01 center" id="header_01">Library</h1>
-      <button class="btn-add">Add Book</button>
-      <h2 class="header_book center">My Books</h2>
+      <button class="btn-add" id="btn-add">Add Book</button>
+      <div class="section_book">
+        <h2 class="header_book center">My Books</h2>
+        <section id="section_book-list" class="section_book-list"></section>
+      </div> 
+      <aside class="add-book">
+        <h2 class="add-book-header center">Add Book</h2>
+        <form class="form form_add-book" id="aside_form">
+          <div class="container_form">
+            <label for="input-title" class="label">Title</label>
+            <input type="text" id="input-title" class="input">
+          </div>
 
-      <section id="section_book-list" class="section_book-list">
+          <div class="container_form">      
+            <label for="input-author" class="label">Author</label>
+            <input type="text" id="input-author" class="input">
+          </div>
 
-      </section>
+          <div class="container_form">    
+            <label for="input-length" class="label">Length</label>
+            <input type="number" min="1" id="input-length" class="input">
+          </div>
+
+          <div class="container_form container_form-checkbox">
+            <label for="input-read" class="label">Read</label>
+            <input type="checkbox" id="input-read" class="input input_checkbox">
+          </div>
+
+          <div class="container_form container_form-btn">
+            <input type="submit" value="Add Book" class="btn-add-02" id="btn_add-01">
+          </div>
+        </form>
+      </aside>
+
+
+
     </main>
  
   </body>

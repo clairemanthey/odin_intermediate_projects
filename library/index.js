@@ -1,7 +1,11 @@
 //Variables from HTML
 let headerOne = document.getElementById("header_01"); 
 let section = document.getElementById("section_book-list")
+//Both Forms
+let asideForm = document.getElementById("aside_form");
+let modalForm = document.getElementById("modal-form")
 
+/*--Library Array--*/
 
 let myLibrary = [
 	{
@@ -22,7 +26,7 @@ let myLibrary = [
 	}
 
 	];
-
+/*--Display Books in DOM--*/
 function Book(){
 	// Write a functiontaht loops through the array
 	//Displays each book on the page'
@@ -33,8 +37,6 @@ function Book(){
 		let length = pages;
 		let readBook = read;
 
-
-		console.log(bookTitle)
         //Created the article element
 	    let article = document.createElement("article");
 		article.classList.add("article_book")
@@ -80,18 +82,102 @@ function Book(){
 
 Book();
 
+/*--Add Books--*/
+
+/*input from aside*/
+let addBtn01 = document.getElementById("btn_add-01");
+let inputTitle = document.getElementById("input-title");
+let inputAuthor = document.getElementById("input-author");
+let inputLength = document.getElementById("input-length");
+let inputRead = document.getElementById("input-read");
+let inputs = document.getElementsByClassName("input")
+
+/*input from modal*/
+let addBtn02 = document.getElementById("modal_add-btn");
+let modalTitle = document.getElementById("modal-title");
+let modalAuthor = document.getElementById("modal-author");
+let modalLength = document.getElementById("modal-length");
+let modalRead = document.getElementById("modal-read");
+
+
 function addBookToLibrary(){
+	console.log("BOOK ADDED")
+	//inputs from aside
+	let asideTitleValue = inputTitle.value;
+	console.log(asideTitleValue)
+	let asideAuthorValue = inputAuthor.value;
+	console.log(asideAuthorValue)
+	let asideLengthValue = inputLength.value;
+	console.log(asideLengthValue)
+	let asideReadValue = inputRead.checked;
+	console.log(asideReadValue)
+
+
+	//inputs from modal
+	let modalTitleValue = modalTitle.value;
+	console.log(modalTitleValue);
+	let modalAuthorValue = modalAuthor.value;
+	console.log(modalAuthorValue);
+	let modalLengthValue = modalLength.value;
+	console.log(modalLengthValue)
+	let modalReadValue = modalRead.checked;
+	console.log(modalReadValue);
 
 }
 
+addBtn01.addEventListener("click", (event) => {
+	event.preventDefault();
+	addBookToLibrary();
+})
 
-/*
-		let readContainer = document.createElement("div");
-		let checkBox = document.createElement("input");
-		checkBox.setAttribute("type", "checkbox")
-		let readLabel = document.createElement("label");
-		readLabel.textContent = "Read Book?";
-		readContainer.appendChild(readLabel);
-		readContainer.appendChild(checkBox);
-		article.appendChild(readContainer)
-*/
+//addBtn01.addEventListener("click", addBookToLibrary)
+
+addBtn02.addEventListener("click", (event) => {
+	event.preventDefault();
+	addBookToLibrary();
+
+})
+
+//addBtn02.addEventListener("click", addBookToLibrary)
+
+
+/*--Display and Close add book modal--*/
+let openModal = document.getElementById("btn-add");
+let modalContainer = document.getElementById("modal_add-book");
+let span = document.getElementsByClassName("close")[0];
+
+openModal.addEventListener("click", () => {
+	modalContainer.style.display = "block";
+
+});
+
+span.addEventListener("click", () => {
+	modalContainer.style.display = "none"
+});
+
+window.addEventListener("click", (event) => {
+	if(event.target == modalContainer){
+		modalContainer.style.display = "none"
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
