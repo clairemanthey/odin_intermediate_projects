@@ -65,6 +65,7 @@
 	color: inherit;
 	width: 300px;
 	margin: 25px 0;
+	min-height: 220px;
 }
 
 .book_header{
@@ -88,7 +89,26 @@
 .status{
 	font-family: var(--sans-serif);
 	font-size: 1.1rem;
+}
+
+.container_finished{
+	font-family: var(--sans-serif);
+	font-size: 1.1rem;
 	padding: 5px 0 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.label_finished{
+	padding: 0 10px 0 0;
+}
+
+.input_finished{
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid var(--main-bg);
+	accent-color:  var(--main-bg);
 }
 
 .btn-delete{
