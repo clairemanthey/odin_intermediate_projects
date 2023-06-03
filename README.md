@@ -19,11 +19,11 @@ To practice HTML and CSS
 To learn more aspects of HTML and CSS
 
 ## Built With
--HTML
--CSS
+- HTML
+- CSS
 
-##License
+## License
 MIT License
 
-##Acknowledgements
+## Acknowledgements
 [The Odin project](https://www.theodinproject.com/) for putting together the curriculum have having their resources [easily available](https://github.com/TheOdinProject) and [CSS resources](https://github.com/TheOdinProject/css-exercises).
