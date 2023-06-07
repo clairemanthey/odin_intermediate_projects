@@ -26,4 +26,4 @@ To learn more aspects of HTML and CSS
 MIT License
 
 ## Acknowledgements
-[The Odin project](https://www.theodinproject.com/) for putting together the curriculum have having their resources [easily available](https://github.com/TheOdinProject) and [CSS resources](https://github.com/TheOdinProject/css-exercises).
+[The Odin project](https://www.theodinproject.com/) for putting together the curriculum and having their resources [easily available](https://github.com/TheOdinProject) and [CSS resources](https://github.com/TheOdinProject/css-exercises).
