@@ -6,6 +6,8 @@ Projects and exercises from The Odin Projects Intermediate HTML and CSS, and Jav
 
 [Motivation](#motivation)
 
+[Screenshots](#Screenshots)
+
 [Built With](#built-with)
 
 [License](#license)
@@ -21,6 +23,11 @@ This course included 2 exercises and 2 projects using concepts both from the fou
 I began The Odin Projects intermediate course to review and practice my HTML and CSS skills. To see if there were any concepts I had missed and practice ones I already knew and fill in any gaps in knowledge. I was also interested in gaining more experience in using HTML and CSS. Also completing projects using those HTML and CSS concepts to see what they can do when building a web application.
 To practice HTML and CSS
 To learn more aspects of HTML and CSS
+
+## Screenshots
+
+### Admin Dashboard
+![My Image](admin_dashboard/image.png)
 
 ## Built With
 - HTML
