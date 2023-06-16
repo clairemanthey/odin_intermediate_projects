@@ -29,6 +29,12 @@ To learn more aspects of HTML and CSS
 ### Admin Dashboard
 ![My Image](admin_dashboard/image.png)
 
+### Project Table
+![My Image](project_table/image.png)
+
+### Sign-up Form
+![My Image](sign-up_form/image.png)
+
 ## Built With
 - HTML
 - CSS
