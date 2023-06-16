@@ -2,11 +2,15 @@
 Projects and exercises from The Odin Projects Intermediate HTML and CSS, and JavaScript Courses
 
 ## Table of Contents
-Introduction
-Motivation
-Built With
-License
-Acknowledgements
+[Introduction](#Introduction)
+
+[Motivation](#motivation)
+
+[Built With](#built-with)
+
+[License](#license)
+
+[Acknowledgements](#acknowledgements)
 
 ## Introduction
 Welcome to my projects and solutions to the exercises from The Odin Project’s [Intermediate HTML and CSS Intermediate course](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css). The course builds on the basics of HTML and CSS from their foundations course. It includes concepts such as CSS units, advanced selectors, positioning, forms, form validation, grid and flexbox.
